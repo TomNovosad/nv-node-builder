@@ -1,0 +1,61 @@
+{
+  "name": "nv-node-builder",
+  "description": "Builder for Node.js applications.",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/types.js",
+  "author": "Tomas Novosad <tomas.novosad@e-novosad.cz>",
+  "scripts": {
+    "publish-package": "npm run compile && cp package-lock.json README.md package.json CHANGELOG.md buildconfig.template.json ./dist && cp -r ./bin ./dist && npm publish dist",
+    "test-package": "npm run compile && cp package-lock.json README.md package.json CHANGELOG.md buildconfig.template.json ./dist && cp -r ./bin ./dist && npm pack ./dist",
+    "compile": "rm -rf ./dist && tsc"
+  },
+  "keywords": [
+    "node",
+    "builder",
+    "typescript",
+    "docker",
+    "service",
+    "windows",
+    "linux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TomNovosad/nv-node-builder"
+  },
+  "bin": {
+    "nv-node-builder": "./bin/nv-node-builder"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "shared.js",
+    "types.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/TomNovosad/nv-node-builder/issues"
+  },
+  "homepage": "https://github.com/TomNovosad/nv-node-builder#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.1.0",
+    "lodash.has": "^4.5.2",
+    "nexe": "^3.3.2",
+    "webpack": "^4.40.2",
+    "xmlbuilder": "^13.0.2"
+  },
+  "engines": {
+    "node": ">=12.9.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/fs-extra": "^8.0.0",
+    "@types/lodash.has": "^4.5.6",
+    "@types/node": "^12.7.5",
+    "@types/webpack": "^4.39.1",
+    "@types/xmlbuilder": "^11.0.1",
+    "typescript": "^3.6.3"
+  },
+  "nodeBuilder": {}
+}

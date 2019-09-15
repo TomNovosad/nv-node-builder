@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+const builder_1 = require(__dirname +'/../index.js');
+
+const builder = new builder_1.Builder();
+builder.start();

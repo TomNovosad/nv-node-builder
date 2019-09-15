@@ -1,0 +1,37 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "space-before-function-paren": false,
+        "interface-name": false,
+        "quotemark": [true, "single"],
+        "no-namespace": [true, "allow-declarations"],
+        "no-console": [
+            false,
+            "log",
+            "error",
+            "debug",
+            "info",
+            "time",
+            "timeEnd",
+            "trace"
+        ],
+        "no-unused-expression": false,
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                    "public-static-field",
+                    "protected-static-field",
+                    "public-static-method",
+                    "protected-static-method"
+                ]
+            }
+        ],
+        "max-line-length": [ false, 120 ]
+    },
+    "rulesDirectory": []
+}
