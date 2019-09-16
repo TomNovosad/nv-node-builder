@@ -56,6 +56,5 @@
     "@types/webpack": "^4.39.1",
     "@types/xmlbuilder": "^11.0.1",
     "typescript": "^3.6.3"
-  },
-  "nodeBuilder": {}
+  }
 }

@@ -82,5 +82,7 @@ See the example below:
     - **containerPort:** specifies port in the container file system.
 
 
+## Running
+Go to directory with your application, run `nv-node-builder` and enjoy!
 
   
