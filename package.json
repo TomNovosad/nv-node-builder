@@ -7,8 +7,8 @@
   "types": "dist/types.js",
   "author": "Tomas Novosad <tomas.novosad@e-novosad.cz>",
   "scripts": {
-    "publish-package": "npm run compile && cp package-lock.json README.md package.json CHANGELOG.md buildconfig.template.json ./dist && cp -r ./bin ./dist && npm publish dist",
-    "test-package": "npm run compile && cp package-lock.json README.md package.json CHANGELOG.md buildconfig.template.json ./dist && cp -r ./bin ./dist && npm pack ./dist",
+    "publish-package": "npm run compile && cp package-lock.json README.md package.json CHANGELOG.md ./dist && cp -r ./bin ./dist && npm publish dist",
+    "test-package": "npm run compile && cp package-lock.json README.md package.json CHANGELOG.md ./dist && cp -r ./bin ./dist && npm pack ./dist",
     "compile": "rm -rf ./dist && tsc"
   },
   "keywords": [
